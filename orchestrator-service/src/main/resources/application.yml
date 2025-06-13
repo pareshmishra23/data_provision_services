@@ -1,0 +1,5 @@
+server:
+  port: 8082 # change this per service
+spring:
+  application:
+    name: metadata-service

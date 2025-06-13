@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4cd69c9a-4dba-4bc3-bc52-918b0e43b67e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../delta-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/.github/workflows/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/DeltaServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/controller/CorporateActionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/model/CorporateAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/repository/CorporateActionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/java/com/example/delta_services/services/CorporateActionServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/main/sample_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/test/java/com/example/delta_services/DeltaServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/test/java/com/example/delta_services/controller/CorporateActionControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/test/java/com/example/delta_services/repository/CorporateActionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../delta-service/src/test/java/com/example/delta_services/services/CorporateActionServicesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/ChatPDF.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/app_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/app_Llma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/htmlTemplates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../pdfchat/LLMComs-main/ChatPDF/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pareshmishra23&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pareshmishra23/delta-service&quot;,
+    &quot;accountId&quot;: &quot;7f35743b-945c-4b57-880a-0f1594683b4b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ySCBUMS1zicT8jltGAFp31hDx6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.api-generator-service [clean].executor": "Run",
+    "Maven.api-generator-service [install].executor": "Run",
+    "Maven.data_provision_service [package].executor": "Run",
+    "Maven.data_provision_services [clean,install].executor": "Run",
+    "Maven.data_provision_services [clean].executor": "Run",
+    "Maven.data_provision_services [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_provision_services/src/design" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cd69c9a-4dba-4bc3-bc52-918b0e43b67e" name="Changes" comment="" />
+      <created>1749818452231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749818452231</updated>
+    </task>
+    <servers />
+  </component>
+</project>
