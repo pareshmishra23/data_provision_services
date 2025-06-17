@@ -2,4 +2,4 @@ server:
   port: 8083 # change this per service
 spring:
   application:
-    name: data-service
+    name: api-genrator-service

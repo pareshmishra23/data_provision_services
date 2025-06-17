@@ -1,5 +1,5 @@
 server:
-  port: 8081 # change this per service
+  port: 8084 # change this per service
 spring:
   application:
-    name: orchestrator-service
+    name: data-service
