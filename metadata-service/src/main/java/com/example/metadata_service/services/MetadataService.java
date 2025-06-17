@@ -20,6 +20,7 @@ public class MetadataService {
 
     public boolean validate(ProvisionRequest request) {
         List<String> availableFields = datasetMetadata.get(request.getDataset());
+        System.out.println("At MetadataService: availableFields "+availableFields);
 
         if (availableFields == null) {
             return false;

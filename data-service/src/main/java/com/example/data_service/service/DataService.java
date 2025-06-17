@@ -1,45 +1,47 @@
 package com.example.data_service.service;
 
 
+import com.example.data_service.Repository.SalesDataRepository;
 import com.example.data_service.dto.ProvisionRequest;
+import com.example.data_service.entity.SalesData;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.*;
 
 @Service
 public class DataService {
 
-    private static final Map<String, List<Map<String, Object>>> dummyData = new HashMap<>();
-
-    static {
-        // Example dummy sales dataset
-        dummyData.put("sales", Arrays.asList(
-                Map.of("amount", 100, "region", "North", "date", "2023-01-01"),
-                Map.of("amount", 200, "region", "South", "date", "2023-01-02")
-        ));
-
-        // Another example dataset
-        dummyData.put("employees", Arrays.asList(
-                Map.of("name", "Alice", "id", 1, "salary", 5000),
-                Map.of("name", "Bob", "id", 2, "salary", 6000)
-        ));
-    }
+    @Autowired
+    private SalesDataRepository salesDataRepository;
 
     public List<Map<String, Object>> fetchFilteredData(ProvisionRequest request) {
-        List<Map<String, Object>> dataList = dummyData.getOrDefault(request.getDataset(), List.of());
+        List<String> fields = request.getFields();
+        System.out.println("Data services "+fields.toString());
+        if (fields == null || fields.isEmpty()) {
+            throw new IllegalArgumentException("Fields must not be null or empty");
+        }
+        List<SalesData> allData = salesDataRepository.findAll();
 
         List<Map<String, Object>> result = new ArrayList<>();
 
-        for (Map<String, Object> row : dataList) {
+        for (SalesData row : allData) {
             Map<String, Object> filteredRow = new HashMap<>();
             for (String field : request.getFields()) {
-                if (row.containsKey(field)) {
-                    filteredRow.put(field, row.get(field));
+                switch (field) {
+                    case "amount" -> filteredRow.put("amount", row.getAmount());
+                    case "region" -> filteredRow.put("region", row.getRegion());
+                    case "date" -> filteredRow.put("date", row.getDate());
+                    case "product" -> filteredRow.put("product", row.getProduct());
                 }
             }
             result.add(filteredRow);
         }
-
         return result;
+    }
+
+    public SalesData save(@RequestBody SalesData data) {
+        return salesDataRepository.save(data);
     }
 }

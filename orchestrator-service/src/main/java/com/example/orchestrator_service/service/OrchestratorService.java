@@ -23,7 +23,7 @@ public class OrchestratorService {
 
 
     public boolean validateWithdataService(ProvisionRequest request) {
-        String dataUrl = "http://localhost:8083/data/fetch";
+        String dataUrl = "http://localhost:8084/data/fetch";
         ResponseEntity<List> dataResponse = restTemplate.postForEntity(dataUrl, request, List.class);
 
         if (dataResponse.getStatusCode().is2xxSuccessful()) {
