@@ -17,8 +17,10 @@ public class DataService {
     private SalesDataRepository salesDataRepository;
 
     public List<Map<String, Object>> fetchFilteredData(ProvisionRequest request) {
+        System.out.println("Fetching data for dataset: " + request.getDataset() + " fields: " + request.getFields());
+
         List<String> fields = request.getFields();
-        System.out.println("Data services "+fields.toString());
+        System.out.println("Data services "+fields);
         if (fields == null || fields.isEmpty()) {
             throw new IllegalArgumentException("Fields must not be null or empty");
         }

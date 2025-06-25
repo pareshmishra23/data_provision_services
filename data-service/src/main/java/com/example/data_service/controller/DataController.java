@@ -20,10 +20,20 @@ public class DataController {
     private DataService dataService;
 
     @GetMapping("/sales")
-    public ResponseEntity<?> getSales(@RequestParam List<String> fields) {
-        ProvisionRequest request = new ProvisionRequest("sales", fields);
-        List<Map<String, Object>> data = dataService.fetchFilteredData(request);
-        return ResponseEntity.ok(data);
+    public ResponseEntity<?> getSales( @PathVariable String dataset,
+                                       @RequestParam(required = false) String fields
+    ) {
+        System.out.println("Received fields: " + fields);
+
+        if (fields == null || fields.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Query parameter 'fields' must not be null or empty");
+        }
+
+        ProvisionRequest provisionRequest = new ProvisionRequest();
+        provisionRequest.setDataset(dataset);
+        provisionRequest.setFields(Arrays.asList(fields.split(",")));
+
+        return ResponseEntity.ok(dataService.fetchFilteredData(provisionRequest));
     }
 
 
@@ -38,8 +48,32 @@ public class DataController {
     @GetMapping("/{dataset}")
     public ResponseEntity<?> getDataset(
             @PathVariable String dataset,
-            @RequestParam String fields // <== not List
+            @RequestParam(required = false) String fields
+    )
+    {
+        System.out.println("Received fields: " + fields);
+
+        if (fields == null || fields.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Query parameter 'fields' must not be null or empty");
+        }
+
+        ProvisionRequest provisionRequest = new ProvisionRequest();
+        provisionRequest.setDataset(dataset);
+        provisionRequest.setFields(Arrays.asList(fields.split(",")));
+
+        return ResponseEntity.ok(dataService.fetchFilteredData(provisionRequest));
+    }
+
+
+    /*@GetMapping("/{dataset}")
+    public ResponseEntity<?> getDataset(
+            @PathVariable String dataset,
+            @RequestParam(required = false) String fields
     ) {
+        if (fields == null || fields.trim().isEmpty()) {
+            return ResponseEntity.badRequest().body("Query parameter 'fields' must not be null or empty");
+        }
+
         System.out.println("Controller: " + dataset + " fields: " + fields);
 
         ProvisionRequest provisionRequest = new ProvisionRequest();
@@ -48,6 +82,7 @@ public class DataController {
 
         return ResponseEntity.ok(dataService.fetchFilteredData(provisionRequest));
     }
+*/
 
 
     @PostMapping("/save/sales")
